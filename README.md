@@ -1,4 +1,14 @@
-# Marketing Intelligence Dashboard
+---
+title: PredictDasha
+emoji: 📊
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
+# PredictDasha — Marketing Intelligence Dashboard
 
 This project consists of a FastAPI backend and a React (Vite) frontend.
 
