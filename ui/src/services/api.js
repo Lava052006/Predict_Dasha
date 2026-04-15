@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000/api';
+// In production (HF Spaces), the frontend is served by the same FastAPI server,
+// so we use a relative path. In local dev, Vite proxies or we use localhost.
+const API_BASE_URL = import.meta.env.DEV ? 'http://localhost:8000/api' : '/api';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
