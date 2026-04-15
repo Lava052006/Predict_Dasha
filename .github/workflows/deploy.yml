@@ -19,4 +19,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://lava052006:$HF_TOKEN@huggingface.co/spaces/lava052006/Predict_Dasha main
+        run: git push --force https://Lava-anya05:$HF_TOKEN@huggingface.co/spaces/Lava-anya05/Predict_Dasha main
