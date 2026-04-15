@@ -41,4 +41,5 @@ COPY revenue_forecast_30_days.csv ./backend/revenue_forecast_30_days.csv
 EXPOSE 7860
 
 # Start FastAPI on port 7860
-CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]
+# --app-dir makes uvicorn resolve modules from /app/backend so `from api.endpoints import ...` works
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860", "--app-dir", "/app/backend"]

@@ -19,7 +19,8 @@ app.add_middleware(
 app.include_router(api_router, prefix="/api")
 
 # Serve the built React frontend (for production / HF Spaces)
-STATIC_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "static")
+# __file__ = /app/backend/main.py → parent = /app/backend → parent = /app → /app/static
+STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "static")
 if os.path.exists(STATIC_DIR):
     app.mount("/assets", StaticFiles(directory=os.path.join(STATIC_DIR, "assets")), name="assets")
 
