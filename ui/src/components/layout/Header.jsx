@@ -9,7 +9,7 @@ const Header = ({ filters, setFilters }) => {
     return (
         <header className="h-16 bg-white border-b border-enterprise-100 px-6 flex items-center justify-between sticky top-0 z-20 shadow-sm">
             <div className="flex items-center gap-4 shrink-0 mr-4">
-                <h1 className="text-xl font-bold text-enterprise-900 leading-tight">AI Marketing Intelligence System</h1>
+                <h1 className="text-xl font-bold text-enterprise-900 leading-tight">PredictDasha Intelligence Dashboard</h1>
             </div>
 
             <div className="flex items-center gap-3">
